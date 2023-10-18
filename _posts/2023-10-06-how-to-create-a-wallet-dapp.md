@@ -20,8 +20,10 @@ Here are the tools we'll need to create and run our application:
 
 First, download the files from this repository: 
 
+```
 git clone https://github.com/Mberic/wallet-dapp.git
 
+```
 Let's explain the files you've just downloaded:
 
 - The **frontend** directory contains the frontend files of our wallet DApp. 
@@ -125,7 +127,7 @@ Another functionality that our DApp is able to achieve is updating token balance
 
 ## ERC20, ERC721 & ERC1155 Portals 
 
-Our wallet can also send transactions for ERC20, ERC721, and ERC1155 tokens ( through the corresponding frontend files). Their implementation is similar to that of **deposit-ether.py**. However, the functions you need to call are different:
+Our wallet can also send transactions for ERC20, ERC721, and ERC1155 tokens ( through the corresponding frontend files). Their implementation is similar to that of **deposit-ether.py**. However, the [functions you need to call](https://docs.cartesi.io/cartesi-rollups/api/json-rpc/portals/) are different:
 
 - ERC20Portal – depositERC20Tokens
 - ERC721Portal – depositERC721Token
@@ -191,7 +193,7 @@ sudo apt install qemu-user-static
 
 Afterward, run **docker buildx** ls to confirm RISC-V support. 
 
-Next, navigate to the node directory. To run the backend inside the Cartesi node, enter the following command in your terminal:
+Next, navigate to the **node directory**. To run the backend inside the Cartesi node, enter the following command in your terminal:
 
 ```
 docker buildx bake  --load
